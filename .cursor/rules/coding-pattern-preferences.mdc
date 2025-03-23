@@ -1,0 +1,53 @@
+---
+description: How we should prefer to code
+globs: 
+alwaysApply: false
+---
+# Coding Pattern Preferences
+
+## Core Principles
+
+### 1. Simplicity First
+- Always prefer simple solutions
+- Choose straightforward implementations over complex ones
+- Keep code readable and maintainable
+
+### 2. Code Reusability
+- Avoid duplication of code whenever possible
+- Before implementing new functionality, check for similar code and functionality in other areas of the codebase
+- Reuse existing solutions when appropriate
+
+### 3. Change Management
+- Only make changes that are:
+  - Explicitly requested, or
+  - Well understood and directly related to the requested change
+- Avoid scope creep in implementations
+
+### 4. Bug Fixing Best Practices
+- When fixing an issue or bug:
+  1. First exhaust all options within the existing implementation
+  2. Only introduce new patterns or technology as a last resort
+  3. If implementing a new solution, remove the old implementation to avoid duplicate logic
+
+### 5. Code Organization
+- Keep the codebase very clean and organized
+- Follow consistent file structure and naming conventions
+- Maintain clear separation of concerns
+
+### 6. Script Management
+- Avoid writing scripts in files if possible, especially if the script is likely only to be run once
+- Prefer configuration over scripting where applicable
+- If scripts are necessary, maintain them in appropriate locations (e.g., dedicated scripts directory)
+
+### 7. File Size and Complexity
+- Avoid having files over 200-300 lines of code
+- Refactor large files when they reach this threshold
+- Break down complex functionality into smaller, manageable components
+
+### 8. Testing and Mocking
+- Mocking data is only needed for tests
+- Never mock data for development or production environments
+- Keep test data separate from application code
+
+
+

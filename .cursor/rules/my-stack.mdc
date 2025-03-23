@@ -1,0 +1,107 @@
+---
+description: The is the project's tech stack
+globs: 
+alwaysApply: false
+---
+## Core Technologies
+
+### Backend
+- **Runtime**: Node.js (>=18.17 <= 22)
+- **Framework**: Express.js 4.21.x
+- **Database Support**:
+  - SQLite 5.1.x
+- **Queue System**: Bull 4.12.x (Redis-based)
+- **Cache**: Redis (via ioredis 5.3.x)
+- **TypeORM**: Custom fork (@n8n/typeorm 0.3.20)
+
+### Frontend
+- **Framework**: Vue.js 3.5.x
+- **Router**: Vue Router 4.5.x
+- **State Management**: Pinia 2.2.x
+- **UI Framework**: Element Plus 2.4.x
+- **Code Editor**: CodeMirror 6.x
+- **Flow Visualization**: Vue Flow 1.42.x
+- **Chart Library**: Chart.js 4.4.x
+
+### Development Tools
+- **Package Manager**: pnpm (workspace-based monorepo)
+- **Build Tools**:
+  - TypeScript 5.7.x
+  - Vite 6.0.x
+  - Biome 1.9.x (formatting/linting)
+  - ESLint (with custom rules)
+  - Prettier (for Vue files)
+- **Testing**:
+  - Jest (backend)
+  - Vitest (frontend)
+  - Cypress (E2E)
+
+## Project Structure
+
+### Core Packages
+- `n8n-workflow`: Base workflow engine
+- `n8n-core`: Core functionality
+- `n8n-cli`: Command-line interface
+- `n8n-editor-ui`: Frontend editor interface
+- `n8n-nodes-base`: Base node implementations
+
+### Supporting Packages
+- `@n8n/chat`: Chat interface components
+- `@n8n/design-system`: UI component library
+- `@n8n/permissions`: Access control system
+- `@n8n/client-oauth2`: OAuth client implementation
+- `@n8n/di`: Dependency injection system
+
+## Key Features Support
+
+### Authentication & Security
+- OAuth 2.0 support
+- JWT-based authentication
+- LDAP integration
+- Rate limiting
+- Helmet security headers
+
+### Data Processing
+- XML processing (xml2js)
+- JSON manipulation (lodash)
+- Date/time handling (luxon)
+- File type detection
+- Data encryption/hashing
+
+### AI/ML Integration
+- LangChain support
+- Various AI provider integrations:
+  - OpenAI
+  - Anthropic
+  - Google AI
+  - Azure OpenAI
+  - HuggingFace
+  - Mistral
+  - Cohere
+
+## Development Standards
+
+### Code Organization
+- Monorepo structure using pnpm workspaces
+- Strict TypeScript configuration
+- Modular architecture with dependency injection
+- Comprehensive testing setup
+
+### Code Quality Tools
+- Biome for formatting and linting
+- ESLint with custom rulesets
+- Prettier for Vue files
+- TypeScript strict mode
+- Automated testing requirements
+
+## Version Control
+- Git-based
+- Conventional commits
+- Automated changelog generation
+- Branch protection rules
+
+## Documentation
+- OpenAPI/Swagger for API documentation
+- TSDoc for code documentation
+- Storybook for component documentation
+- Markdown-based guides
